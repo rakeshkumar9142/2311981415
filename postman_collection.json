@@ -1,0 +1,58 @@
+{
+  "info": {
+    "name": "Afford Medical Backend Assessment",
+    "_postman_id": "80e95e53-e8b5-4af5-99a3-6aee2e953213",
+    "description": "Collection for vehicle scheduling and priority inbox APIs.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Health",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/health",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "health"]
+        }
+      }
+    },
+    {
+      "name": "Vehicle Scheduling",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/vehicles/schedule",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "vehicles", "schedule"]
+        }
+      }
+    },
+    {
+      "name": "Priority Inbox Top N",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/priority-inbox/top-unread?n=5",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "priority-inbox", "top-unread"],
+          "query": [
+            {
+              "key": "n",
+              "value": "5"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:3000"
+    }
+  ]
+}
