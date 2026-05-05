@@ -1,5 +1,7 @@
+require("dotenv").config();   
+
 const express = require("express");
-const env = require("./config/env");
+const env = require("./config/env.js");
 const requestLogger = require("./middleware/requestLogger");
 const errorHandler = require("./middleware/errorHandler");
 const routes = require("./routes");
