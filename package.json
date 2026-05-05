@@ -1,0 +1,23 @@
+{
+  "name": "afford-medical-backend-assessment",
+  "version": "1.0.0",
+  "description": "Backend assessment solution with logging middleware, vehicle scheduling, and priority inbox APIs.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "express",
+    "backend",
+    "knapsack",
+    "priority-queue"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.9.0",
+    "dotenv": "^16.5.0",
+    "express": "^4.21.2"
+  }
+}
