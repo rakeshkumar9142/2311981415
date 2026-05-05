@@ -45,7 +45,6 @@ async function Log(stack, level, packageName, message) {
       }
     );
   } catch (error) {
-    // Keep the app resilient even if external logging API is unavailable.
   }
 }
 
